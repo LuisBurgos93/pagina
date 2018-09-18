@@ -11,14 +11,34 @@ h1 {
 
 }
 
+#menu{
+	height: 20px;
+	width: 100%;
+	top: 0px;
+
+	background-color: lightgreen;
+}
+
+#menu, span{
+	margin-right: 22%;
+	font-family: Verdana;
+	font-weight: bold; 
+}
+
+
+
+.main{
+	top:0px;
+}
+
 #avis {
-	position: relative;
 	top: 270px;
+
 }
 
 #myCarousel, .caoursel, .slide{
 	height: 490px;
-	position: relative;
+	top: 0px;
 
 }
 
