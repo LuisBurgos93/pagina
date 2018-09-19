@@ -1,0 +1,107 @@
+<html>
+	<head>
+		<style>
+			legend {
+			    background-color: #000;
+			    color: #fff;
+			    padding: 3px 6px;
+			}
+
+			input,
+			label {
+			    width: 43%;
+			}
+
+			input {
+			    margin: .5rem 0;
+			    padding: .5rem;
+			    border-radius: 4px;
+			    border: 1px solid #ddd;
+			}
+
+			label {
+			    display: inline-block;
+			    font-size: .8rem;
+			}
+
+			input:invalid + span:after {
+			    content: '✖';
+			    color: #f00;
+			    padding-left: 5px;
+			}
+
+			input:valid + span:after {
+			    content: '✓';
+			    color: #26b72b;
+			    padding-left: 5px;
+			}
+
+			.warning {
+			    font-size: .65rem;
+			    color: #e67d09;
+			}
+
+			.submit {
+			    width: 92%;
+			    margin: 0 auto;
+			}
+
+			#boton{
+			     margin: .5rem 0;
+			    padding: .5rem;
+			    border-radius: 15px;
+			    border: 1px solid #ddd;
+			}
+
+			#output{
+				margin: .5rem 0;
+			    padding: .5rem;
+			    border-radius: 4px;
+			    border: 1px solid #ddd; 
+			    height: 255px;
+			}
+
+			output{
+				display: inline;
+
+			}
+		</style>
+		<script type="text/javascript" src="./javascript/script.js"></script>
+	</head>
+	<body>
+<fieldset>
+    <legend>Input</legend>
+    <form>
+        <div>
+            <label for="display-name"> Name:
+                <span class="warning">*(Allows only letters.)</span> 
+            </label>
+            <input type="text" id="display-name" name="ip-display"
+                   pattern="[a-zA-Z/s]+"
+                   maxlength="15" minlength="1" value="Aa" required />
+            <span><button id="boton" onclick="myFunction()">Submit</button></span>
+        </div>
+        <div>
+            <label for="readonly-ip">ReadOnly:</label>
+            <input type="text" id="readonly-ip" name="ip-readonly"
+                   placeholder="I'm read only." readonly />
+        </div>
+        <div>
+            <label for="disabled-ip">Disabled:</label>
+            <input type="text" name="ip-disabled"
+                   id="disabled-ip"
+                   value="I am disabled"
+                   disabled />
+        </div>
+        <div>
+            <input type="submit" class="submit" value="Submit" />
+        </div>
+        
+    </form>
+
+</fieldset>
+    <div id="output">
+    	<output  id="nuevo"></output>
+    </div>
+	</body>
+</html>

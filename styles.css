@@ -16,11 +16,11 @@ h1 {
 	width: 100%;
 	top: 0px;
 
-	background-color: lightgreen;
+	background-color: 	#808080;
 }
 
 #menu, span{
-	margin-right: 22%;
+	margin-right: 15px;
 	font-family: Verdana;
 	font-weight: bold; 
 }
@@ -29,6 +29,7 @@ h1 {
 
 .main{
 	top:0px;
+	background-color: #C0C0C0
 }
 
 #avis {
@@ -58,9 +59,12 @@ bottom: 10px;
 
 
 }
+.marco{
+	bottom: 200px;
+}
 
-.marco {
-	
+.marco, h2{
+	left:400px;
 }
 
 .p1{
@@ -68,8 +72,7 @@ bottom: 10px;
 	font-size: 13px;
 	height: 100px;
 	width: 200px;
-	position: relative;
-	left:0px;
+	left:300px;
 }
 
 .p2{
@@ -77,8 +80,7 @@ bottom: 10px;
 	color: 	#ffffff;
 	height: 60px;
 	width: 200px;
-	position: relative;
-	left: 300px;
+	left: 600px;
 	bottom: 100px;
 	background-color: #ffbf00;  
 
@@ -88,13 +90,14 @@ bottom: 10px;
   display: grid;
   grid-template-columns:1fr 1fr 1fr;
   padding: 10px;
+  bottom: 200px;
 
 }
 
 .grid-item {
   height: 200px;
   background-color: rgba(255, 255, 255, 0.8);
-  border: 10px solid rgba(255, 255, 25, 0.8);
+  border: 10px solid #A9A9A9;
   padding: 10px;
   font-size: 30px;
   text-align: center;
