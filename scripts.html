@@ -77,9 +77,9 @@
                 <span class="warning">*(Allows only letters.)</span> 
             </label>
             <input type="text" id="display-name" name="ip-display"
-                   pattern="[a-zA-Z/s]+"
+                  	pattern="[0-9/s]+"
                    maxlength="15" minlength="1" value="Aa" required />
-            <span><button id="boton" onclick="myFunction()">Submit</button></span>
+            <span><button id="boton" onclick="validate()">Submit</button></span>
         </div>
         <div>
             <label for="readonly-ip">ReadOnly:</label>
