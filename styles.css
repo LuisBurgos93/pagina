@@ -15,21 +15,24 @@ h1 {
 	height: 20px;
 	width: 100%;
 	top: 0px;
-
-	background-color: 	#808080;
+	background-color: 	#c70989;
 }
 
 #menu, span{
-	margin-right: 15px;
+	margin-right: 22%;
 	font-family: Verdana;
 	font-weight: bold; 
+	color: white;
 }
 
+#menu, input{
+	border-radius: 15px;
+}
 
 
 .main{
 	top:0px;
-	background-color: #C0C0C0
+	background-color: darkgreen;
 }
 
 #avis {
