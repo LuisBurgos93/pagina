@@ -12,21 +12,34 @@ h1 {
 }
 
 #menu{
-	height: 20px;
+	display: inline-block
+	height: 30px;
 	width: 100%;
 	top: 0px;
 	background-color: 	#c70989;
+	font-style: normal;
 }
 
-#menu, span{
-	margin-right: 22%;
+#menu span{
+	margin-right: 15%;
 	font-family: Verdana;
 	font-weight: bold; 
 	color: white;
+	font-size: 23px;
+}
+#menu a{
+	font-style: normal;
+	color: white;
+	font-family: Arial;
+	font-size: 23px;
 }
 
-#menu, input{
+#menu input{
 	border-radius: 15px;
+	color: black;
+	height: 24px;
+	font-style: normal;
+
 }
 
 
@@ -36,38 +49,66 @@ h1 {
 }
 
 #avis {
-	top: 270px;
+	top: 200px;
 
 }
 
-#myCarousel, .caoursel, .slide{
+#myCarousel .caoursel .slide{
 	height: 490px;
 	top: 0px;
 
 }
 
 
-.carousel-indicators, ol{
+.carousel-indicators ol{
 height:30px;
 bottom: 10px;
 
 }
 
+.carousel-caption p{
+	font-size: 20px;
+	font-family: verdana;
+	font-style: italic;
+}
 
 
 .lista {
-	color: green;
-	text-align: left;
-	margin: 100px, 300px;
 
-
+	color: #fff;
+	object-position: center;
+	font-size: 24px;
+	width: 100%;
+	background-color: silver;
 }
+
+.lista ul{
+		text-align: center;
+		object-position: center;
+		color: #000100;
+		list-style-position: inside;
+}
+
+.lista h3{
+	text-align: center;
+	color: #8B3A3A;
+	font-style: oblique;
+}
+
+.lista a{
+	color: #000100;
+}
+
 .marco{
 	bottom: 200px;
+	background-color: #090974;
+	font-family: "Goudy Bookletter 1911", sans-serif;
 }
 
-.marco, h2{
+.marco h2{
 	left:400px;
+	color: #ffffff;
+	text-align: center;
 }
 
 .p1{
@@ -84,7 +125,6 @@ bottom: 10px;
 	height: 60px;
 	width: 200px;
 	left: 600px;
-	bottom: 100px;
 	background-color: #ffbf00;  
 
 }
@@ -106,6 +146,7 @@ bottom: 10px;
   text-align: center;
 }
 
-#mytext{
+.avis{
+	bottom: 20px;
 
 }
