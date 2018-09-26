@@ -1,0 +1,20 @@
+git bash commands
+
+
+SECURE SHELL
+ssh -T git@github.com //connects to github account
+eval $(ssh-agent -s) //starts the ssh agent in the background
+ssh-add /d/prog/ssh/id_rsa //adds the ssh key
+ssh-add -L //verifies the key
+ssh-add -l // verifies the key fingerprints
+
+
+GIT COMMANDS
+
+git clone git@github.com:Username/name.git //clones the github repository
+git commit -m "comentario" //commit the changes and add a commentary
+git branch //check the current branch
+git pull //pull 
+git push //pushes (uploads) to github
+git checkout (branchname) //checks branch or changes the branch
+git add //add files to local repository
