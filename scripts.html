@@ -83,14 +83,14 @@
         <div>
             <label for="readonly-ip">ReadOnly:</label>
             <input type="text" id="readonly-ip" name="ip-readonly"
-                   placeholder="I'm read only." />
+                   placeholder="I'm read only." readonly="for" />
         </div>
         <div>
             <label for="disabled-ip">Disabled:</label>
             <input type="text" name="ip-disabled"
                    id="disabled-ip"
-                   value="I am disabled"
-                   disabled />
+                   placeholder="Direction"
+                   />
         </div>
         <div>
             <input type="button" class="submit" value="Submit" onclick="myFunction()" />
@@ -99,8 +99,11 @@
     </form>
 
 </fieldset>
+
     <div id="output">
-    	<output  id="nuevo"></output>
+    	<legend>Output</legend>
+    	<label for="nuevo"> Nombre: <output  id="nuevo"></output><br>
+    	Numero: <output id="nuevo2"></output>
     </div>
 	</body>
 </html>

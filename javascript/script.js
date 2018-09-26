@@ -14,21 +14,23 @@ class veriStrings{
 
 	validateName(){
 			if(/^[a-zA-Z\s]+$/.test(this._nombre)){
-				 document.getElementById("nuevo").innerHTML = numero;
-				 alert("basue");
+				 
+				 //alert("basue");
+				 return true;
 				}
 				else{
-					alert("* el nombre tiene caracteres no validos.");
+					
+					return false;
 				}
 	}
 
 	validatePhone(){
-			if(/^[0-9\s]+$/.test(this._nombre)){
-				 document.getElementById("nuevo").innerHTML = numero;
-				 alert("basue");
+			if(/^[0-9\s]+$/.test(this._telefono)){
+				 //alert("basue");
+				 return true;
 				}
 				else{
-					alert("* el nombre tiene caracteres no validos.");
+					return false;
 				}
 	}
 
@@ -38,5 +40,18 @@ class veriStrings{
 
 function myFunction(){
 	var x = document.getElementById("display-name").value;
-	var y = document.getElementById("display-name").value;
+	var y = document.getElementById("disabled-ip").value;
+	const verif = new veriStrings(x,y);
+	if(verif.validateName()){
+		document.getElementById("nuevo").innerHTML = verif.nombre;
+	}else{
+		alert("* nombre tiene caracteres no validos.");
+	}
+
+	if(verif.validatePhone()){
+		document.getElementById("nuevo2").innerHTML = " "+verif.telefono;
+	}else{
+		alert("* numero tiene caracteres no validos.");
+	}
+
 }
