@@ -45,7 +45,7 @@ h1 {
 
 .main{
 	top:0px;
-	background-color: darkgreen;
+	background: url("images\\background.jpg");
 }
 
 #avis {
@@ -80,6 +80,7 @@ bottom: 10px;
 	font-size: 24px;
 	width: 100%;
 	background-color: silver;
+	border-radius: 15%;
 }
 
 .lista ul{
@@ -101,32 +102,65 @@ bottom: 10px;
 
 .marco{
 	bottom: 200px;
-	background-color: #090974;
+	background-image: url("images\\flowersbackground.png");
 	font-family: "Goudy Bookletter 1911", sans-serif;
 }
 
 .marco h2{
 	left:400px;
-	color: #ffffff;
+	color: #8B3A3A;
 	text-align: center;
 }
 
+.marco span{
+	margin-left: 5%;
+	display: inline-block;
+}
+
+h5{
+	font-weight: 800;
+	font-size: 23px;
+}
 .p1{
-	color: rgb(255, 0, 65);
-	font-size: 13px;
+	color: #fff;
+	font-size: 16px;
+	font-weight: 700;
 	height: 100px;
-	width: 200px;
-	left:300px;
+	width: 300px;
+	display: inline-block;
+	margin-bottom: 10px;
+  	padding: 5px;
+  	float:left;
 }
 
 .p2{
 	font-family: 'Roboto', sans-serif;
-	color: 	#ffffff;
-	height: 60px;
-	width: 200px;
-	left: 600px;
-	background-color: #ffbf00;  
+	font-weight: 700;
+	font-size: 16px;
+	color: #fff;
+	height: 100px;
+	width: 300px;
+	display: inline-block;  
+	margin-bottom: 10px;
+  	padding: 5px;
+  	float:left;
 
+}
+.p2 p{
+	font-style: italic;
+}
+
+.p3{
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	font-weight: 700;
+	color: #fff;
+	height: 100px;
+	width: 300px;
+	display: inline-block;
+	margin-bottom: 10px;
+  	padding: 5px;
+  	float:left;
 }
 
 .grid-container {
@@ -146,7 +180,4 @@ bottom: 10px;
   text-align: center;
 }
 
-.avis{
-	bottom: 20px;
 
-}
