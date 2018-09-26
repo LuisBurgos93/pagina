@@ -78,13 +78,12 @@
             </label>
             <input type="text" id="display-name" name="ip-display"
                    pattern="[a-zA-Z/s]+"
-                   maxlength="15" minlength="1" value="Aa" required />
-            <span><button id="boton" onclick="myFunction()">Submit</button></span>
+                   maxlength="15" minlength="1" placeholder="Aa" value="Aa" required />
         </div>
         <div>
             <label for="readonly-ip">ReadOnly:</label>
             <input type="text" id="readonly-ip" name="ip-readonly"
-                   placeholder="I'm read only." readonly />
+                   placeholder="I'm read only." />
         </div>
         <div>
             <label for="disabled-ip">Disabled:</label>
@@ -94,7 +93,7 @@
                    disabled />
         </div>
         <div>
-            <input type="submit" class="submit" value="Submit" />
+            <input type="button" class="submit" value="Submit" onclick="myFunction()" />
         </div>
         
     </form>
