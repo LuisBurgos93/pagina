@@ -180,6 +180,29 @@ h5{
   text-align: center;
 }
 
+.texto{
+	font-family: 'Roboto', sans-serif;
+	background-color: rgba(199,9,137, 0.5);
+	float: left; 
+	height: 300px;
+	width: 100%;
+	text-align: center;
+	top:12px;
+}
+
+.texto h3{
+	font-size: 70px;
+	color: #fff;
+
+}
+
+.texto p{
+	font-style: italic;
+	font-size: 24px;
+	color: #fff;
+}
+
+
 #flor0{
 	background-image: url("images\\flor0.jpg");
 	background-size: 100% 100%;
@@ -261,3 +284,47 @@ h5{
 	float:left;
 }
 
+#arreglo0{
+	background-image: url("images\\arreglo0.jpg");
+	background-size: 100% 100%;
+	height: 150px;
+	width: 190px;
+	display: inline-block;
+	float:left;
+}
+
+#arreglo1{
+	background-image: url("images\\arreglo1.jpg");
+	background-size: 100% 100%;
+	height: 150px;
+	width: 190px;
+	display: inline-block;
+	float:left;
+}
+
+#arreglo2{
+	background-image: url("images\\arreglo2.jpg");
+	background-size: 100% 100%;
+	height: 150px;
+	width: 190px;
+	display: inline-block;
+	float:left;
+}
+
+#arreglo3{
+	background-image: url("images\\arreglo3.jpg");
+	background-size: 100% 100%;
+	height: 150px;
+	width: 190px;
+	display: inline-block;
+	float:left;
+}
+
+#arreglo4{
+	background-image: url("images\\arreglo4.jpg");
+	background-size: 100% 100%;
+	height: 150px;
+	width: 190px;
+	display: inline-block;
+	float:left;
+}
