@@ -165,7 +165,7 @@ h5{
 
 .grid-container {
   display: grid;
-  grid-template-columns:1fr 1fr 1fr;
+  grid-template-columns:1fr 1fr ;
   padding: 10px;
   bottom: 200px;
 
@@ -180,4 +180,84 @@ h5{
   text-align: center;
 }
 
+#flor0{
+	background-image: url("images\\flor0.jpg");
+	background-size: 100% 100%;
+	height: 150px;
+	width: 290px;
+	display: inline-block;
+	float:left;
+}
+
+#flor1{
+	background-image: url("images\\flor1.jpg");
+	background-size: 100% 100%;
+	height: 150px;
+	width: 290px;
+	display: inline-block;
+	float:left;
+}
+
+#flor2{
+	background-image: url("images\\flor2.jpg");
+	background-size: 100% 100%;
+	height: 150px;
+	width: 290px;
+	display: inline-block;
+	float:left;
+}
+
+#flor3{
+	background-image: url("images\\flor3.jpg");
+	background-size: 100% 100%;
+	height: 150px;
+	width: 290px;
+	display: inline-block;
+	float:left;
+}
+
+#flor4{
+	background-image: url("images\\flor4.jpg");
+	background-size: 100% 100%;
+	height: 150px;
+	width: 290px;
+	display: inline-block;
+	float:left;
+}
+
+#flor5{
+	background-image: url("images\\flor5.jpg");
+	background-size: 100% 100%;
+	height: 150px;
+	width: 290px;
+	display: inline-block;
+	float:left;
+}
+
+#flor6{
+	background-image: url("images\\flor6.jpg");
+	background-size: 100% 100%;
+	height: 150px;
+	width: 290px;
+	display: inline-block;
+	float:left;
+}
+
+#flor7{
+	background-image: url("images\\flor7.jpg");
+	background-size: 100% 100%;
+	height: 150px;
+	width: 290px;
+	display: inline-block;
+	float:left;
+}
+
+#flor8{
+	background-image: url("images\\flor8.jpg");
+	background-size: 100% 100%;
+	height: 150px;
+	width: 290px;
+	display: inline-block;
+	float:left;
+}
 
