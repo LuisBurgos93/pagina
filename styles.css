@@ -328,3 +328,81 @@ h5{
 	display: inline-block;
 	float:left;
 }
+
+		<style>
+			legend {
+			    background-color: #000;
+			    color: #fff;
+			    padding: 3px 6px;
+			}
+
+			input,
+			label {
+			    width: 43%;
+			}
+
+			input {
+			    margin: .5rem 0;
+			    padding: .5rem;
+			    border-radius: 4px;
+			    border: 1px solid #ddd;
+			}
+
+			label {
+			    display: inline-block;
+			    font-size: .8rem;
+			}
+
+			input:invalid + span:after {
+			    content: '✖';
+			    color: #f00;
+			    padding-left: 5px;
+			}
+
+			input:valid + span:after {
+			    content: '✓';
+			    color: #26b72b;
+			    padding-left: 5px;
+			}
+
+			.warning {
+			    font-size: .65rem;
+			    color: #e67d09;
+			}
+
+			.submit {
+			    width: 92%;
+			    margin: 0 auto;
+			}
+
+			#boton{
+			     margin: .5rem 0;
+			    padding: .5rem;
+			    border-radius: 15px;
+			    border: 1px solid #ddd;
+			}
+
+			#output{
+				margin: .5rem 0;
+			    padding: .5rem;
+			    border-radius: 4px;
+			    border: 1px solid #ddd; 
+			    height: 255px;
+			}
+
+			output{
+				display: inline;
+
+			}
+
+			input.submit {
+ 				   width: 20em;  height: 2em;
+			}
+			.formap label{
+				font-family: Arial;
+				font-size: 20px;
+			}
+			.formab p{
+				font-family: Arial;
+				font-size: 20px;
+			}

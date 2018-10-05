@@ -1,5 +1,17 @@
 <html>
 	<head>
+		<title>Formulario</title>
+
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+  		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  		<script type="text/javascript" src="./javascript/grid.js"></script>
+    	<link rel="stylesheet" href=".\styles.css">
+   		 <link rel="icon" type="image/png" href=".\images\florlogo.png">
+
 		<style>
 			legend {
 			    background-color: #000;
@@ -43,7 +55,7 @@
 
 			.submit {
 			    width: 92%;
-			    margin: 0 auto;
+			    margin:  auto;
 			}
 
 			#boton{
@@ -65,45 +77,119 @@
 				display: inline;
 
 			}
+
+			input.submit {
+ 				   width: 20em;  height: 2em;
+			}
+			.formap label{
+				font-family: Arial;
+				font-size: 20px;
+			}
+			.formab p{
+				font-family: Arial;
+				font-size: 20px;
+			}
 		</style>
 		<script type="text/javascript" src="./javascript/script.js"></script>
 	</head>
 	<body>
 <fieldset>
-    <legend>Input</legend>
+	<div id="menu">
+			<img src=".\images\florlogo.png" height="30px" width="24px"><span><a href="./catalogoflores.html">Flores</a></span><span><a href="./catalogoarreglos.html">Arreglos</a></span><span>buscar<input id="buscar" type="text" placeholder="buscar..."></span>
+	</div> 
+	<div class="main">
+ 
+    <legend>Datos personales</legend>
     <form>
-        <div>
-            <label for="display-name"> Name:
+        <div class = "formap">
+            <label for="display-name"> Nombre:
                 <span class="warning">*(Allows only letters.)</span> 
             </label>
             <input type="text" id="display-name" name="ip-display"
                    pattern="[a-zA-Z/s]+"
-                   maxlength="15" minlength="1" placeholder="Aa" value="Aa" required />
+                   maxlength="15" minlength="1" placeholder="Ingresa Nombre" required />
         </div>
-        <div>
-            <label for="readonly-ip">ReadOnly:</label>
-            <input type="text" id="readonly-ip" name="ip-readonly"
-                   placeholder="I'm read only." readonly="for" />
+        <div class = "formap">
+            <label for="display-name"> Ap. Paterno:
+                <span class="warning">*(Allows only letters.)</span> 
+            </label>
+            <input type="text" id="display-lastname1" name="ip-display"
+                   pattern="[a-zA-Z/s]+"
+                   maxlength="15" minlength="1" placeholder="Ingresa Apellido Paterno" required />
         </div>
-        <div>
-            <label for="disabled-ip">Disabled:</label>
-            <input type="text" name="ip-disabled"
-                   id="disabled-ip"
-                   placeholder="Direction"
-                   />
+        <div class = "formap">
+            <label for="display-name"> Ap. Materno:
+                <span class="warning">*(Allows only letters.)</span> 
+            </label>
+            <input type="text" id="display-lastname2" name="ip-display"
+                   pattern="[a-zA-Z/s]+"
+                   maxlength="15" minlength="1" placeholder="Ingresa Apellido Materno"  required />
         </div>
-        <div>
-            <input type="button" class="submit" value="Submit" onclick="myFunction()" />
+        <div class = "formap">
+            <label for="display-phone">Telefono :
+            </label>
+            <input type="text" id="display-phone" name="ip-display" placeholder=" Ingresa Telefono"  required />
         </div>
-        
+        <div class = "formap">
+            <label for="display-address">Dirección :
+            </label>
+            <input type="text" id="display-address" name="ip-display" placeholder="Ingresa Dirección"  required />
+        </div>
     </form>
 
+    <legend>Datos Bancarios</legend>
+    <form>
+    	<div class = "formab">
+			<p>BANCO<span>
+			<select name="BANCO">
+   				<option value="1">BBVA</option> 
+   				<option value="2">BANCOMER</option> 
+   				<option value="3">BANAMEX</option>
+   				<option value="10">BANORTE/IXTE</option> 
+   				<option value="11">INBURSA</option> 
+   				<option value="12">OTROS</option> 
+			</select></span><span>
+			TIPO DE TARJETA</span><span>			<select name="TIPO">
+   				<option value="1">MASTERCARD</option> 
+   				<option value="2">VISA</option> 
+			</select></span></p>
+
+		</div>
+		<div class = "formap">
+            <label for="display-cardnumber">No. de Tarjeta: 
+            </label>
+            <input type="text" id="display-cardnumber" name="ip-display" placeholder="Ingresa Numero de Tarjeta" required />
+        </div>
+        <div class = "formap">
+            <label for="display-expireddate">Fecha de Vencimiento: 
+            </label>
+            <input type="text" id="display-expireddate" name="ip-display" placeholder="Formato DD/MM/YYYY" required />
+        </div>
+
+    </form>
+        <legend>PEDIDO</legend>
+    <form>
+    	    	<div class = "formab">
+			<p>PEDIDO<span>
+			<select name="BANCO">
+   				<option value="1">FLORES</option> 
+   				<option value="2">ARREGLO</option> 
+			</select></span></p>
+    </form>
+    <div class = "formap">
+            <input type="button" class="submit" value="Enviar datos" onclick="myFunction()"  lon />
+    </div>
 </fieldset>
+
+
 
     <div id="output">
     	<legend>Output</legend>
     	<label for="nuevo"> Nombre: <output  id="nuevo"></output><br>
-    	<output id="nuevo2"></output>
+    	<output id="nuevo2"></output></label>
     </div>
+
+</div>
 	</body>
+
 </html>
