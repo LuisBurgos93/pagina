@@ -1,3 +1,4 @@
+let someVarName;
 class veriStrings{
 	constructor(name, lastname1, lastname2, phone, cardno, date){
 		this._name = name;
@@ -61,6 +62,16 @@ class veriStrings{
 
 }
 
+function populateStorage(name, lastname1, lastname2, phone, cardno, date, address){
+	localStorage.setItem('nameKey', name);
+  	localStorage.setItem('lastname1Key', lastname1);
+ 	localStorage.setItem('lastname2Key', lastname2);
+ 	localStorage.setItem('phoneKey', phone);
+  	localStorage.setItem('cardnoKey', cardno);
+ 	localStorage.setItem('dateKey', date);
+ 	localStorage.setItem('addressKey', address);
+
+}
 //principal
 
 function myFunction(){
@@ -70,27 +81,46 @@ function myFunction(){
 	var phone = document.getElementById("display-phone").value;
 	var cardno = document.getElementById("display-cardnumber").value;
 	var date = document.getElementById("display-expireddate").value;
+	var address = document.getElementById("display-address").value;
+	let bo = true;
 	const verif = new veriStrings(name, lastname1, lastname2, phone, cardno, date);
-	console.log(verif.values);
 	if(verif.validateNames()){
-		document.getElementById("nuevo").innerHTML = verif.values;
+		console.log(bo);
 	}else{
+		bo = false;
 		alert("* algun campo de nombre, ap. paterno o ap. materno tiene caracteres no validos.");
 	}
-	if(verif.validatePhone()){
-		document.getElementById("nuevo").innerHTML = verif.values;}
+	if(verif.validatePhone()){}
 	else{
+		bo = false;
 		alert("* Telefono tiene caracteres no validos");
 	}
 	if(verif.validateCard()){
-		document.getElementById("nuevo").innerHTML = verif.values;
+
 	}else{
+		bo = false;
 		alert("* Tarjeta tiene caracteres no validos");
 	}
-
-	if(verif.validateNames(), verif.validatePhone(), verif.validateCard()){
-			window.location.href = './index.html';
+	if (bo == true){
+		console.log("hola ")
+		populateStorage(name, lastname1, lastname2, phone, cardno, date, address);
+		window.location.href = './validated.html';
 	}
 
+
+
+}
+
+function displayfu(){
+	name = localStorage.getItem("nameKey");
+	lastname1 = localStorage.getItem('lastname1Key');
+ 	lastname2 = localStorage.getItem('lastname2Key');
+ 	phone = localStorage.getItem('phoneKey');
+ 	address = localStorage.getItem('addressKey');
+ 	console.log(name);
+ 	name = name + ' ' + lastname1 + ' ' + lastname2;
+ 	document.getElementById("name").innerHTML = name;
+ 	document.getElementById("address").innerHTML = address;
+ 	document.getElementById("phone").innerHTML = phone;
 
 }
